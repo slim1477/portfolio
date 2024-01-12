@@ -1,0 +1,183 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+/* =========================================================*/
+
+/* #Site Styles
+================================================== 
+1.0 General Typorgraphy
+2.0 Common Preset
+3.0 Header
+4.0 Profile
+5.0 Experience Timeline
+6.0 Clients Area
+7.0 Testimonial Area
+8.0 Contact Area
+9.0 Footer Area
+================================================== */
+/*========================================
+ 	==== 1.0 General Typorgraphy ====  
+========================================*/
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900';
+
+body {
+    /*background: #fff;*/
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    color: #404040;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*===== Lists =====*/
+ul, ol {
+    margin-bottom: 0px;
+}
+
+li {
+        margin-bottom: 15px;
+        list-style-type:none;
+    }
+button:hover{
+    cursor:pointer;
+}
+/*===== End Lists =====*/
+
+a {
+    color: #00bbcc;
+}
+
+    a:focus, a:hover, a.active {
+        color: #00bbcc;
+    }
+
+section {
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 18px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 18px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 18px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 18px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+::placeholder {
+    font-size: 18px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+
+
+/*========================================
+ 	==== End General Typorgraphy ====  
+========================================*/
+/*========================================
+ 	==== 2.0 Header ====  
+========================================*/
+
+.portfolio-header {
+    /*width: 100%;*/
+    background: url("../Assets/Images/bannerImg.jpg") no-repeat center center;
+    background-size:100vw 100vh;
+    height: 180px;
+}
+.title h1{
+    margin-top: 8.5rem;
+}
+.main-menu {
+    background:#b7c0f5;
+    margin-top: -70px;
+    /*margin-left:5px*/;
+    width: 230px;
+    padding-top: 85px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -100;
+}
+
+@media screen and (max-width: 768px) {
+
+    .portfolio-header {
+        /*all: reset;*/
+        width: 100% !important;
+        background-size: 100vw 20vh;
+        height: 100px;
+    }
+
+    .display-name h1,p{
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 55px;
+    color: black !important;
+
+    }
+}
+
+/*=======================================*/
+           /*Profile Image*/
+/*=======================================*/
+.profile-image img {
+    margin-top: 80px;
+    max-width: 450px;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+@media screen and (max-width: 36em) {
+    .profile-image img {
+        margin-top: -150px;
+        max-width: 200px;
+        border-radius: 50%;
+       /* height: 5em;
+        width: 5em;
+        transform: translateX(50%);*/
+        margin: -200px auto 20px auto;
+    }
+    /*.desktop-profile-section{
+        background: green;
+        justify-content:center;
+        width:100vw;
+    }*/
+    .display-name h1 {
+        color: brown;
+    }
+}
